@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GlowAura Clinic - Pancarkan Pesona Cantik Alami Anda</title>
+    <title>Linet Beauty - Pancarkan Pesona Cantik Alami Anda</title>
     <!-- Google Fonts & Font Awesome -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -104,7 +104,7 @@
         .blob-2 { top: 40%; right: -5%; width: 400px; height: 400px; background: var(--soft-purple); }
         .blob-3 { bottom: 10%; left: 10%; width: 300px; height: 300px; background: #fad0c4; }
 
-        /* --- NAVBAR --- */
+        /* --- NAVBAR & LOGO STYLES --- */
         nav {
             position: fixed;
             top: 0;
@@ -125,14 +125,21 @@
         }
 
         .logo {
-            font-family: var(--font-title);
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--deep-plum);
+            display: flex;
+            align-items: center;
             text-decoration: none;
         }
 
-        .logo span { color: var(--rose-gold); }
+        .logo img {
+            width: 90px;
+            height: auto;
+            display: block;
+            transition: .3s;
+        }
+
+        .logo img:hover {
+            transform: scale(1.05);
+        }
 
         .nav-links {
             display: flex;
@@ -237,7 +244,7 @@
             font-size: 0.95rem;
         }
 
-        /* --- KEUNGGULAN (FEATURES) --- */
+        /* --- FEATURES --- */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -272,7 +279,7 @@
             color: var(--deep-plum);
         }
 
-        /* --- LAYANAN (SERVICES) --- */
+        /* --- SERVICES --- */
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -310,7 +317,7 @@
             margin-bottom: 20px;
         }
 
-        /* --- TESTIMONI --- */
+        /* --- TESTIMONIALS --- */
         .testimonial-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -418,6 +425,10 @@
             padding: 60px 8% 30px;
         }
 
+        footer .logo img {
+            width: 70px;
+        }
+
         .footer-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -517,7 +528,7 @@
             }
 
             .nav-links {
-                display: none; /* Disederhanakan untuk mobile */
+                display: none;
             }
 
             .hero-floating-card {
@@ -541,148 +552,146 @@
 
     <!-- NAVBAR -->
     <nav id="navbar">
-        <a href="#" class="logo">Glow<span>Aura</span></a>
+        <a href="#" class="logo">
+            <img src="logo.png" alt="Linet Beauty Logo">
+        </a>
         <ul class="nav-links">
-            <li><a href="#keunggulan">Keunggulan</a></li>
-            <li><a href="#layanan">Layanan</a></li>
-            <li><a href="#testimoni">Testimoni</a></li>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#services">Layanan</a></li>
+            <li><a href="#testimonials">Testimoni</a></li>
             <li><a href="#faq">FAQ</a></li>
         </ul>
-        <a href="https://wa.me/6282231078289?text=Halo%20GlowAura%20Clinic,%20saya%20ingin%20konsultasi%20gratis" class="btn-primary">
+        <a href="https://wa.me/6281234567890?text=Halo%20Linet%20Beauty,%20saya%20ingin%20konsultasi%20mengenai%20perawatan%20kulit" class="btn-primary">
             <i class="fab fa-whatsapp"></i> Reservasi
         </a>
     </nav>
 
     <!-- HERO SECTION -->
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="hero-content fade-up">
-            <span class="hero-badge"><i class="fas fa-sparkles"></i> Klinik Kecantikan Terpercaya</span>
+            <span class="hero-badge"><i class="fas fa-sparkles"></i> Beauty & Aesthetics Clinic</span>
             <h1>Pancarkan Pesona Cantik Alami Anda</h1>
-            <p>Dapatkan kulit sehat, cerah, dan glowing impian Anda melalui perawatan modern berstandar medis dengan harga yang tetap bersahabat.</p>
-            <a href="https://wa.me/6282231078289?text=Halo%20GlowAura%20Clinic,%20saya%20mau%20ambil%20promo%20Konsultasi%20Gratis" class="btn-primary">
-                KONSULTASI GRATIS SEKARANG <i class="fas fa-arrow-right"></i>
+            <p>Rasakan perawatan kulit premium dengan teknologi modern dan penanganan profesional dari dokter spesialis kecantikan terpercaya di Linet Beauty.</p>
+            <a href="https://wa.me/6281234567890?text=Halo%20Linet%20Beauty,%20saya%20ingin%20konsultasi%20mengenai%20perawatan%20kulit" class="btn-primary">
+                Konsultasi Gratis <i class="fas fa-arrow-right"></i>
             </a>
         </div>
         <div class="hero-image fade-up">
-            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80" alt="Klinik Kecantikan GlowAura">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80" alt="Linet Beauty Treatment">
             <div class="hero-floating-card glass-card">
-                <i class="fas fa-certificate" style="font-size: 2rem; color: var(--rose-gold);"></i>
+                <i class="fas fa-certificate fa-2x" style="color: var(--rose-gold);"></i>
                 <div>
-                    <h4 style="font-size: 0.9rem; color: var(--deep-plum);">100% Aman & Teruji</h4>
-                    <p style="font-size: 0.8rem; color: #666;">Sertifikasi BPOM & Halal</p>
+                    <h4 style="margin: 0; color: var(--deep-plum);">100% Aman</h4>
+                    <small style="color: #666;">Teruji & Tersertifikasi</small>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- STATS SECTION -->
-    <section>
-        <div class="stats">
-            <div class="stat-card glass-card fade-up">
-                <h3>15.000+</h3>
-                <p>Pasien Puas</p>
+    <div class="stats-container" style="padding: 0 8%;">
+        <div class="stats glass-card fade-up">
+            <div class="stat-card">
+                <h3>5,000+</h3>
+                <p>Klien Puas</p>
             </div>
-            <div class="stat-card glass-card fade-up">
+            <div class="stat-card">
                 <h3>10+</h3>
-                <p>Dokter Ahli & Dokter Spesialis</p>
+                <p>Dokter Ahli</p>
             </div>
-            <div class="stat-card glass-card fade-up">
-                <h3>99%</h3>
-                <p>Tingkat Kepuasan</p>
+            <div class="stat-card">
+                <h3>15+</h3>
+                <p>Layanan Premium</p>
             </div>
-            <div class="stat-card glass-card fade-up">
-                <h3>5 Star</h3>
-                <p>Rating Pelayanan</p>
+            <div class="stat-card">
+                <h3>4.9/5</h3>
+                <p>Rating Kepuasan</p>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- KEUNGGULAN SECTION -->
-    <section id="keunggulan">
+    <!-- FEATURES / WHY CHOOSE US -->
+    <section id="about">
         <div class="section-title fade-up">
-            <h2>Mengapa Memilih Kami?</h2>
-            <p>Komitmen kami untuk memberikan hasil terbaik tanpa kompromi pada keamanan Anda</p>
+            <h2>Mengapa Memilih Linet Beauty?</h2>
+            <p>Keunggulan layanan yang membuat kulit Anda tampil memukau</p>
         </div>
         <div class="features-grid">
             <div class="feature-item glass-card fade-up">
-                <div class="feature-icon"><i class="fas fa-tags"></i></div>
-                <h3>Harga Terjangkau</h3>
-                <p>Perawatan kelas premium dengan harga ramah di kantong, tanpa biaya tersembunyi.</p>
-            </div>
-            <div class="feature-item glass-card fade-up">
-                <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
-                <h3>Terdaftar BPOM</h3>
-                <p>Seluruh bahan, produk, dan peralatan medis telah lolos uji klinis dan terdaftar resmi BPOM.</p>
-            </div>
-            <div class="feature-item glass-card fade-up">
-                <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
-                <h3>Sertifikat Halal</h3>
-                <p>Prosedur dan produk terjamin 100% halal, memberikan rasa aman dalam setiap perawatan.</p>
-            </div>
-            <div class="feature-item glass-card fade-up">
                 <div class="feature-icon"><i class="fas fa-user-md"></i></div>
-                <h3>Gratis Konsultasi Pertama</h3>
-                <p>Analisis kondisi kulit secara menyeluruh langsung dengan dokter ahli kami secara gratis.</p>
+                <h3>Dokter Terpengalaman</h3>
+                <p>Ditangani langsung oleh tim dokter estetika profesional dan tersertifikasi.</p>
             </div>
             <div class="feature-item glass-card fade-up">
-                <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
-                <h3>Bisa Order Online</h3>
-                <p>Kemudahan pemesanan jadwal perawatan dan produk perawatan rumah secara instan.</p>
+                <div class="feature-icon"><i class="fas fa-microscope"></i></div>
+                <h3>Teknologi Modern</h3>
+                <p>Menggunakan peralatan medis dan estetika terkini standar internasional.</p>
+            </div>
+            <div class="feature-item glass-card fade-up">
+                <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                <h3>Bahan Berkualitas</h3>
+                <p>Produk aman, teruji klinis, dan disesuaikan dengan jenis kulit Anda.</p>
+            </div>
+            <div class="feature-item glass-card fade-up">
+                <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                <h3>Tempat Nyaman</h3>
+                <p>Suasana klinik yang tenang, bersih, dan memanjakan diri Anda.</p>
             </div>
         </div>
     </section>
 
-    <!-- LAYANAN SECTION -->
-    <section id="layanan">
+    <!-- SERVICES -->
+    <section id="services" style="background: rgba(255, 255, 255, 0.5);">
         <div class="section-title fade-up">
-            <h2>Perawatan Unggulan</h2>
-            <p>Solusi komprehensif untuk setiap masalah kulit dan estetika wajah Anda</p>
+            <h2>Layanan Unggulan Kami</h2>
+            <p>Solusi perawatan terbaik untuk setiap kebutuhan kulit Anda</p>
         </div>
         <div class="services-grid">
             <div class="service-card glass-card fade-up">
-                <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=600&q=80" alt="Glow Facial" class="service-img">
+                <img src="https://images.unsplash.com/photo-1512290900676-26c2a6a095ae?auto=format&fit=crop&w=600&q=80" alt="Facial Glowing" class="service-img">
                 <div class="service-info">
-                    <h3>Aura Glow Facial</h3>
-                    <p>Pembersihan mendalam untuk mengangkat sel kulit mati, komedo, serta mengembalikan kecerahan alami kulit.</p>
-                    <a href="https://wa.me/6282231078289?text=Saya%20tertarik%20dengan%20Aura%20Glow%20Facial" class="btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Pesan Sekarang</a>
+                    <h3>Glow Facial Treatment</h3>
+                    <p>Pembersihan mendalam untuk mengangkat sel kulit mati dan membuat wajah tampak glowing seketika.</p>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Linet%20Beauty,%20saya%20ingin%20tanya%20mengenai%20Glow%20Facial%20Treatment" class="btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Pesan Sekarang</a>
                 </div>
             </div>
             <div class="service-card glass-card fade-up">
-                <img src="https://images.unsplash.com/photo-1512290900673-70020d91244e?auto=format&fit=crop&w=600&q=80" alt="Laser Rejuvenation" class="service-img">
+                <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=600&q=80" alt="Acne Care" class="service-img">
                 <div class="service-info">
-                    <h3>Laser Rejuvenation</h3>
-                    <p>Teknologi laser modern untuk memudarkan flek hitam, bekas jerawat, serta merangsang kolagen kulit.</p>
-                    <a href="https://wa.me/6282231078289?text=Saya%20tertarik%20dengan%20Laser%20Rejuvenation" class="btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Pesan Sekarang</a>
+                    <h3>Acne Clear Solution</h3>
+                    <p>Perawatan khusus meredakan jerawat aktif, menyamarkan bekas luka, dan mengontrol minyak berlebih.</p>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Linet%20Beauty,%20saya%20ingin%20tanya%20mengenai%20Acne%20Clear%20Solution" class="btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Pesan Sekarang</a>
                 </div>
             </div>
             <div class="service-card glass-card fade-up">
-                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Acne Clearance Treatment" class="service-img">
+                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Anti Aging" class="service-img">
                 <div class="service-info">
-                    <h3>Acne Clearance</h3>
-                    <p>Solusi ampuh menuntaskan jerawat membandel dan peradangan kulit hingga ke akarnya.</p>
-                    <a href="https://wa.me/6282231078289?text=Saya%20tertarik%20dengan%20Acne%20Clearance" class="btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Pesan Sekarang</a>
+                    <h3>Anti-Aging Rejuvenation</h3>
+                    <p>Mengencangkan kulit, menyamarkan garis halus, dan merangsang produksi kolagen secara alami.</p>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Linet%20Beauty,%20saya%20ingin%20tanya%20mengenai%20Anti-Aging%20Rejuvenation" class="btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Pesan Sekarang</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- TESTIMONI SECTION -->
-    <section id="testimoni">
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
         <div class="section-title fade-up">
-            <h2>Kisah Sukses Pasien</h2>
-            <p>Pengalaman nyata dari mereka yang telah membuktikannya sendiri</p>
+            <h2>Apa Kata Klien Kami?</h2>
+            <p>Pengalaman nyata dari mereka yang telah merasakan perubahan di Linet Beauty</p>
         </div>
         <div class="testimonial-grid">
             <div class="testimonial-card glass-card fade-up">
                 <div class="stars">
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                 </div>
-                <p>"Baru 2 kali perawatan Laser Rejuvenation di sini, bekas jerawat bertahun-tahun langsung pudar. Dokternya ramah banget dan tidak adiktif!"</p>
+                <p>"Pelayanan di Linet Beauty sangat ramah. Setelah 2x treatment, kulit wajah saya jadi kelihatan jauh lebih sehat dan cerah!"</p>
                 <div class="client-info">
-                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Siti Rahma" class="client-avatar">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Client" class="client-avatar">
                     <div class="client-details">
                         <h4>Siti Rahma</h4>
-                        <small>Karyawan Swasta</small>
+                        <small style="color: #888;">Pelanggan Setia</small>
                     </div>
                 </div>
             </div>
@@ -690,74 +699,61 @@
                 <div class="stars">
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                 </div>
-                <p>"Tempatnya sangat bersih, estetik, dan nuansanya nyaman. Konsultasi gratisnya benar-benar menyeluruh, dikasih solusi sesuai kantong."</p>
+                <p>"Dokternya sangat informatif, gak asal kasih tindakan. Tempatnya bersih dan estetik banget. Sangat direkomendasikan!"</p>
                 <div class="client-info">
-                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80" alt="Nadia Putri" class="client-avatar">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80" alt="Client" class="client-avatar">
                     <div class="client-details">
-                        <h4>Nadia Putri</h4>
-                        <small>Entrepreneur</small>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-card glass-card fade-up">
-                <div class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-                <p>"Pelayanan dokter dan perawatnya top! Produk skincare-nya sudah BPOM dan Halal jadi bikin tenang pas pakai harian."</p>
-                <div class="client-info">
-                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=100&q=80" alt="Diana Lestari" class="client-avatar">
-                    <div class="client-details">
-                        <h4>Diana Lestari</h4>
-                        <small>Mahasiswi</small>
+                        <h4>Amanda Putri</h4>
+                        <small style="color: #888;">Pelanggan Setia</small>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ SECTION -->
-    <section id="faq">
+    <!-- FAQ -->
+    <section id="faq" style="background: rgba(255, 255, 255, 0.5);">
         <div class="section-title fade-up">
             <h2>Pertanyaan Populer (FAQ)</h2>
-            <p>Segala sesuatu yang perlu Anda ketahui sebelum perawatan</p>
+            <p>Temukan jawaban untuk pertanyaan yang paling sering diajukan</p>
         </div>
         <div class="faq-container">
             <div class="faq-item glass-card fade-up">
                 <button class="faq-question">
-                    <span>Apakah benar-benar Gratis Konsultasi Pertama?</span>
+                    <span>Apakah harus buat janji terlebih dahulu?</span>
                     <i class="fas fa-chevron-down"></i>
                 </button>
                 <div class="faq-answer">
-                    <p>Ya, benar! Anda bisa datang dan berkonsultasi mengenai kondisi kulit Anda secara langsung dengan dokter kami tanpa dikenakan biaya konsultasi.</p>
+                    <p>Sangat disarankan untuk membuat janji terlebih dahulu melalui WhatsApp agar Anda mendapat slot waktu yang nyaman tanpa harus menunggu lama.</p>
                 </div>
             </div>
             <div class="faq-item glass-card fade-up">
                 <button class="faq-question">
-                    <span>Apakah produk dan perawatan aman untuk ibu hamil/menyusui?</span>
+                    <span>Apakah perawatan di sini aman untuk kulit sensitif?</span>
                     <i class="fas fa-chevron-down"></i>
                 </button>
                 <div class="faq-answer">
-                    <p>Kami memiliki formulasi khusus yang disesuaikan serta terbukti aman digunakan untuk ibu hamil dan menyusui. Pastikan Anda menginformasikannya saat sesi konsultasi.</p>
+                    <p>Ya, sangat aman. Dokter kami akan melakukan analisis kondisi kulit terlebih dahulu sebelum memberikan tindakan yang tepat.</p>
                 </div>
             </div>
             <div class="faq-item glass-card fade-up">
                 <button class="faq-question">
-                    <span>Bagaimana cara melakukan reservasi jadwal?</span>
+                    <span>Berapa harga untuk sekali konsultasi?</span>
                     <i class="fas fa-chevron-down"></i>
                 </button>
                 <div class="faq-answer">
-                    <p>Anda cukup menekan tombol "Reservasi" atau ikon WhatsApp yang ada di website ini, lalu tim admin kami akan segera membantu mengaturkan jadwal sesuai waktu pilihan Anda.</p>
+                    <p>Konsultasi pertama dengan dokter estetika kami bersifat GRATIS saat Anda mengambil paket perawatan apapun.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CALL TO ACTION BANNER -->
+    <!-- CTA BANNER -->
     <div class="cta-banner fade-up">
         <h2>Siap Memiliki Kulit Impian Anda?</h2>
-        <p style="margin-bottom: 25px; color: #555;">Ambil promo konsultasi gratis dan penawaran spesial minggu ini sekarang juga!</p>
-        <a href="https://wa.me/6282231078289?text=Halo%20admin,%20saya%20mau%20klaim%20Promo%20Konsultasi%20Gratis%20hari%20ini" class="btn-primary" style="font-size: 1.1rem;">
-            <i class="fab fa-whatsapp"></i> Hubungi Kami via WhatsApp
+        <p style="margin-bottom: 25px; color: #555;">Dapatkan penawaran spesial diskon 20% untuk perawatan pertama Anda!</p>
+        <a href="https://wa.me/6281234567890?text=Halo%20Linet%20Beauty,%20saya%20ingin%20klaim%20diskon%2020%%20perawatan%20pertama" class="btn-primary">
+            Klaim Diskon Sekarang <i class="fas fa-gift"></i>
         </a>
     </div>
 
@@ -765,46 +761,46 @@
     <footer>
         <div class="footer-grid">
             <div class="footer-col">
-                <a href="#" class="logo" style="color: #fff; display: inline-block; margin-bottom: 15px;">Glow<span>Aura</span></a>
-                <p>Klinik estetika terpercaya dengan pelayanan berstandard medis, aman, terjangkau, dan tersertifikasi resmi.</p>
+                <a href="#" class="logo" style="display:inline-block; margin-bottom:15px;">
+                    <img src="logo.png" alt="Linet Beauty Logo">
+                </a>
+                <p>Klinik kecantikan terpercaya yang siap membantu Anda tampil lebih percaya diri dengan kulit sehat alami.</p>
             </div>
             <div class="footer-col">
                 <h4>Navigasi</h4>
-                <ul>
-                    <li><a href="#keunggulan" style="color:#ccc; text-decoration:none;">Keunggulan</a></li>
-                    <li><a href="#layanan" style="color:#ccc; text-decoration:none;">Layanan</a></li>
-                    <li><a href="#testimoni" style="color:#ccc; text-decoration:none;">Testimoni</a></li>
-                    <li><a href="#faq" style="color:#ccc; text-decoration:none;">FAQ</a></li>
-                </ul>
+                <li><a href="#home" style="color:#ccc; text-decoration:none;">Beranda</a></li>
+                <li><a href="#about" style="color:#ccc; text-decoration:none;">Tentang Kami</a></li>
+                <li><a href="#services" style="color:#ccc; text-decoration:none;">Layanan</a></li>
+                <li><a href="#faq" style="color:#ccc; text-decoration:none;">FAQ</a></li>
             </div>
             <div class="footer-col">
-                <h4>Jam Operasional</h4>
-                <p><i class="far fa-clock"></i> Senin - Sabtu: 09:00 - 19:00 WIB</p>
-                <p><i class="far fa-clock"></i> Minggu: 10:00 - 17:00 WIB</p>
+                <h4>Kontak</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Jl. Kecantikan No. 123, Jakarta</p>
+                <p><i class="fas fa-phone"></i> +62 812-3456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@linetbeauty.com</p>
             </div>
             <div class="footer-col">
-                <h4>Kontak & Sosmed</h4>
-                <p><i class="fas fa-phone-alt"></i> 0822-3107-8289</p>
-                <div class="social-links" style="margin-top: 15px;">
+                <h4>Ikuti Kami</h4>
+                <div class="social-links">
                     <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 GlowAura Clinic. All Rights Reserved.</p>
+            <p>&copy; 2026 Linet Beauty. All Rights Reserved.</p>
         </div>
     </footer>
 
     <!-- FLOATING WHATSAPP BUTTON -->
-    <a href="https://wa.me/6282231078289?text=Halo%20GlowAura%20Clinic,%20saya%20ingin%20bertanya%20mengenai%20perawatan" class="floating-wa" target="_blank" aria-label="Chat via WhatsApp">
+    <a href="https://wa.me/6281234567890?text=Halo%20Linet%20Beauty,%20saya%20ingin%20konsultasi%20mengenai%20perawatan%20kulit" class="floating-wa" target="_blank" title="Chat via WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <!-- JAVASCRIPT -->
     <script>
-        // Effect Navbar Scrolled
+        // Navbar Scroll Effect
         window.addEventListener('scroll', function() {
             const navbar = document.getElementById('navbar');
             if (window.scrollY > 50) {
@@ -815,21 +811,17 @@
         });
 
         // FAQ Accordion
-        const faqItems = document.querySelectorAll('.faq-item');
-        faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question');
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
             question.addEventListener('click', () => {
-                const isActive = item.classList.contains('active');
-                faqItems.forEach(faq => faq.classList.remove('active'));
-                if (!isActive) {
-                    item.classList.add('active');
-                }
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
             });
         });
 
         // Scroll Animation (Intersection Observer)
         const observerOptions = {
-            threshold: 0.15
+            threshold: 0.1
         };
 
         const observer = new IntersectionObserver((entries, observer) => {
@@ -840,8 +832,8 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.fade-up').forEach(el => {
-            observer.observe(el);
+        document.querySelectorAll('.fade-up').forEach(element => {
+            observer.observe(element);
         });
     </script>
 </body>
